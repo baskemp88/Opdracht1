@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>CMDA Intranet - Aanmelden</title>
+		<meta name="description" content="Aanmelden bij CMD."/>
+		<meta name="keywords" content="intranet,cmd,studenten,hva,formulier,contactgegevens,voorkeuren"/>
+		<meta name="author" content="Bas Kemp"/>
+        
+      
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="index.html">Opleiding</a></li>
+					<li><a href="#">Onderwijsprogramma</a></li>
+					<li><a href="#">Organisatie</a></li>
+					<li><a href="#">Stages en projecten</a></li>
+					<li><a href="#">Aanmelden</a></li>
+				</ul>
+			</nav>
+		</header>		
+		
+		<article>
+			<h1>Aanmeldingsformulier CMD</h1>
+
+			<section>
+				<p>
+					Bent u geinteresseerd in samenwerken met CMD Amsterdam? Dat kan! Tijdens de opleiding werken studenten aan projecten voor echte opdrachtgevers. Ook lopen de studenten stage, in het tweede en afstudeerjaar.
+				</p>
+				<p>
+					CMD Amsterdam zoekt altijd naar positieve verbindingen met de creatieve stad Amsterdam.
+				</p>
+				<p>
+					Voor het aanmelden van stageplekken of projecten kunt u onderstaand formulier invullen. Wij nemen zo nodig contact met u op nadat het formulier is verstuurd. Voor vragen of opmerkingen kunt u contact <a href="mailto:info@cmd-amsterdam.nl">contact</a> met ons op.
+				</p>
+			</section>
+			
+			<form autocomplete=off>
+				<fieldset>
+					<legend>Contactgegevens</legend> <!-- Deze titel onzichtbaar maken in CSS en de H1 stylen. -->
+					<h2>Contactgegevens</h2>
+
+					<label for="name">Naam *</label>
+					<input type="text" required pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" id="name" placeholder="Minimaal twee letters"/>
+
+					<label for="business">Bedrijf</label>
+					<input type="text" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" id="business" placeholder="Minimaal twee letters"/>
+
+					<label for="street">Straatnaam *</label>
+					<input type="text" required id="street" placeholder="Oranjestraat"/>
+
+					<label for="homenumber">Huisnummer *</label>
+					<input type="text" required id="homenumber" placeholder="111 A"/>
+					
+					<label for="zip">Postcode *</label>
+					<input type="text" required pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}" id="zip" placeholder="1111AA"/> 
+
+					<label for="residence">Woonplaats *</label>
+					<input type="text" required id="residence" placeholder="Nederland"/>
+
+					<label for="tel">Telefoonnummer *</label>
+					<input type="tel" required pattern="^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$" id="tel" placeholder="0612345678"/>
+
+					<label for="email">E-mail *</label>
+					<input type="email" required id="email" placeholder="ik@voorbeeld.com"/>
+
+					<h2>Ik wil mij aanmelden voor:</h2>
+
+					<label for="project">Voor een project</label>
+					<input type="radio" id="project"/>
+
+					<label for="company">Als stagebedrijf</label>
+					<input type="radio" id="company"/>
+
+				</fieldset>
+
+				<fieldset>
+					<legend>Voor een project</legend>
+					<h2>Voor een project</h2>
+
+					<label for="title">Titel</label>
+					<input type="text" id="title"/>
+
+					<label for="assignmentdescription">Opdrachtomschrijving</label>
+					<input type="text" id="assignmentdescription"/>
+
+					<label for="targetgroupdescription">Doelgroepomschrijving</label>
+					<input type="text" id="targetgroupdescription"/>
+
+					<label for="goaldescription">Doelstelling/intentie van het project </label>
+					<input type="text" id="goaldescription"/>
+
+					<label for="number">Looptijd</label>
+					<input type="number" id="number" placeholder="Aantal weken"/>
+
+					<label for="month">Deadline</label>
+					<input type="month" id="month"/>
+
+					<h3>Geschikt voor:</h3>
+
+					<label for="oneradio">Eerstejaars studenten</label>
+					<input type="radio" id="oneradio"/>
+
+					<label for="tworadio">Tweedejaars studenten</label>
+					<input type="radio" id="tworadio"/>
+
+					<label for="threeradio">Derdejaars studenten</label>
+					<input type="radio" id="threeradio"/>
+
+					<label for="fourradio">Afstudeer studenten</label>
+					<input type="radio" id="fourradio"/>
+
+					<label for="unknownradio">Onbekend</label>
+					<input type="radio" id="unknownradio"/>
+
+					<label for="commentsproject">Opmerkingen</label>
+					<input type="text" id="commentsproject"/>					
+				</fieldset>
+
+				<fieldset>
+					<legend>Als stagebedrijf</legend>
+					<h2>Als stagebedrijf</h2>
+					<h3>Geschikt voor:</h3>
+
+					<label for="firstradio">Tweedejaars studenten</label>
+					<input type="radio" id="firstradio"/>
+
+					<label for="secondradio">Afstudeer studenten</label>
+					<input type="radio" id="secondradio"/>
+
+					<label for="unkowntworadio">Onbekend</label>
+					<input type="radio" id="unkowntworadio"/>
+
+					<h4>Hoe lang is de stage?</h4>
+					<label for="tenradio">Tien weken</label>
+					<input type="radio" id="tenradio"/>
+
+					<label for="twentyradio">Twintig weken</label>
+					<input type="radio" id="twentyradio"/>				
+
+					<label for="worktitle">Beschrijving werkzaamheden</label>
+					<input type="text" id="worktitle"/>
+
+					<h3>Beschrijving werkzaamheden</h3>
+
+					<label for="companyname">Bedrijfsnaam *</label>
+					<input type="text" required pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" id="companyname" placeholder="Minimaal twee letters"/>
+
+					<label for="companystreet">Straatnaam *</label>
+					<input type="text" required id="companystreet" placeholder="Oranjestraat"/>
+
+					<label for="companynumber">Huisnummer *</label>
+					<input type="text" required id="companynumber" placeholder="111 A"/>
+					
+					<label for="companyzip">Postcode *</label>
+					<input type="text" required pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}" id="companyzip" placeholder="1111AA"/> 
+
+					<label for="companyresidence">Woonplaats *</label>
+					<input type="text" required id="companyresidence" placeholder="Nederland"/>
+
+					<label for="companytel">Telefoonnummer *</label>
+					<input type="tel" required pattern="^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$" id="companytel" placeholder="0612345678"/>
+
+					<label for="sector">Sector *</label>
+					<input type="text" required id="sector" list="sectorlist" placeholder="Agrarisch"/>  
+						<datalist id="sectorlist">  
+							<option value="Agrarisch">
+							<option value="Bouw"> 
+							<option value="Food">
+							<option value="Industrie"> 
+							<option value="Technologie, Media, Telecom"> 
+							<option value="Publieke sector"> 
+							<option value="Real Estate"> 
+							<option value="Retail">
+							<option value="Transport &amp; Logistiek"> 
+							<option value="Zakelijke dienstverlening"> 
+						</datalist>
+
+						<label for="core">Core Business *</label>
+					<input type="text" required id="core" list="corelist" placeholder="Webdesign/ICT"/>  
+						<datalist id="corelist">  
+							<option value="Administratief/Financieel">
+							<option value="Camera/Geluid/Montage"> 
+							<option value="Communicatie/Marketing">
+							<option value="Decor/Visagie/Casting"> 
+							<option value="P&amp;O/Juridisch"> 
+							<option value="Productie/Redactie/Camjo"> 
+							<option value="Webdesign/ICT"> 
+						</datalist>
+
+					<label for="commentsintern">Opmerkingen</label>
+					<input type="text" id="commentsintern"/>	
+				</fieldset>
+
+					<input type="submit" value="Doorgaan"/>
+			</form>
+		</article>
+
+		<footer>
+			
+		</footer>
+	</body>
+</html>
