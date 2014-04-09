@@ -1,0 +1,310 @@
+html{
+	height:100%;
+}
+
+div, p, form, img{
+	padding:0px; margin:0px;
+}
+
+h1, h1 a {
+	color:#F90;
+	padding:10px 0 10px 20px;
+}
+
+img {  
+     -webkit-filter: sepia(100%);
+	 -moz-box-filter: sepia(100%); 
+	-webkit-transition:all 2s ease-in;
+	max-width:100%;
+} 
+
+video{
+	max-width:100%;
+}
+
+img:hover {  
+        -webkit-filter: blur(80px); 
+		-moz-box-filter: blur(80px);   
+		 
+} 
+
+body{
+	margin:0;
+	padding:0;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	line-height:1.4em;
+}
+
+body > div{
+	position:relative;
+	margin:0 auto;
+	width:75%;
+}
+
+p {
+	padding: 10px;
+	line-height:24px;
+	margin:10px 10px;
+}
+
+
+h2{ font-size:20px;}
+
+section a {
+	background:#FC0;
+	padding: 5px 10px;
+	color:#222;
+	text-decoration:none;
+}
+
+article p a{
+	text-decoration:none;
+	background:#333;
+	padding:10px 20px;
+	color:#fff;
+}
+
+
+/* NAV MENU */
+
+nav li ul			{ display:none;}
+nav li:hover ul		{ display:block;	position:absolute; top:40px; left:0; width:200px; background:url('images/snav.png') #394a53; z-index:200;}
+nav li li			{ float:none; line-height:40px; padding:0 20px;}
+
+nav {
+	-moz-box-shadow: 5px 5px 5px #888;
+	-webkit-box-shadow: 5px 5px 5px #888;
+	box-shadow: 5px 5px 5px #888;
+	margin:10px 0 0 0;
+  	background-color:#2C5463;
+  	padding:10px;
+}
+ 
+ 
+nav ul {
+  font-family: Arial, Verdana;
+  font-size: 20px;
+  margin: 0 auto;
+  width:80%;
+  padding:0;
+  list-style: none;
+}
+ 
+nav ul li {
+	display:inline-block;
+ 	padding:0 0 10px 0;
+}
+ 
+ 
+nav a {
+  text-decoration: none;
+  padding: 10px 26px;
+  color: #ffffff; 
+  text-align:center;
+ font-size:16px;
+}
+ 
+nav ul li a:hover {
+	color:#F90;
+  background: #617F8A;
+}
+ 
+nav li:hover ul {
+ 
+}
+ 
+nav li:hover li {
+  float: none;
+  font-size: 11px;
+  border-bottom:1px solid #fff;
+  width:100%;
+  text-align:center;
+ 
+}
+ 
+nav li:hover a {
+  background: #3A464F;
+  height:30px; 
+}
+
+ 
+/* EINDE NAV */
+
+
+
+
+
+/******************* FORM **********/
+form {
+    background: #EEE;
+    padding: 20px 10px 20px 10px;
+    font: 12px Georgia, "Times New Roman", Times, serif;
+    color: #888;
+    text-shadow: 1px 1px 1px #FFF;
+    border:1px solid #DADADA;
+	float:left;
+	margin:0 0 20px 0;
+}
+
+form h2 {
+    font: 25px Georgia, "Times New Roman", Times, serif;
+    margin: 10px 0 10px 0;
+    color: #888;
+}
+
+
+[for="name"]:after,
+[for="email"]:after, 
+[for="zip"]:after,
+[for="homenumber"]:after, [for="street"]:after {
+	content: " *";
+	color: red;
+}
+
+
+fieldset{
+	border-radius: 10px;
+  	-webkit-border-radius: 10px;
+  	width: 280px;
+  	float: left;
+	color:#333; 
+	margin:10px;
+}
+
+
+fieldset legend{
+	display:none;
+}
+
+
+
+label{
+	padding:0 10px 0 0;
+	color:#222;
+	font-size:14px;
+}
+
+
+input[type="submit"]{
+	background:#F90;
+	border:1px solid #F90;
+	-webkit-border-radius: 50px; 
+	-moz-border-radius: 50px;
+	border-radius: 5px;
+	float:right;
+	padding:10px 40px;
+	color:#fff;
+	margin:0 24px 0 0;
+}
+
+input[type="text"], input[type="tel"], input[type="number"], input[type="month"], input[type="email"], textarea, select{
+    border: 1px solid #DADADA;
+    color: #888;
+    height: 24px;
+    margin-bottom: 16px;
+    margin-right: 6px;
+    margin-top: 2px;
+    outline: 0 none;
+    padding: 3px 3px 3px 5px;
+    width: 70%;
+    font: normal 12px/12px Georgia, "Times New Roman", Times, serif;
+}
+	
+	
+	
+label {
+    display: block;
+    margin: 0px 0px 5px;
+}
+
+label[for=project], label[for=company], label[for=oneradio], label[for=tworadio], label[for=threeradio], label[for=fourradio], label[for=unknownradio],
+label[for=firstradio], label[for=secondradio], label[for=unkowntworadio], label[for=tenradio], label[for=twentyradio] {
+	padding:0 0 0 30px;
+}
+
+input[type="radio"]{
+	position:relative;
+	top:-22px;
+	left:0;
+}
+
+
+
+form textarea{
+    height:100px;
+}
+						
+/**********  LIST *********/
+
+ol {
+    counter-reset:li;
+    margin-left:0;
+    padding-left:0;
+}
+
+ol a{	
+	text-decoration:none;
+	color:#F90;
+}
+
+ol > li {
+    position:relative;
+    margin:0 0 6px 2em;
+    padding:4px 8px; 
+    list-style:none; 
+    border-top:2px solid #666;
+    background:#f6f6f6;
+}
+
+ol > li:before {
+    content:counter(li);
+    counter-increment:li; 
+    position:absolute;
+    top:-2px;
+    left:-2em;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    width:2em;
+    margin-right:8px;
+    padding:4px;
+    border-top:2px solid #666;
+    color:#fff;
+    background:#666;
+    font-weight:bold;
+    font-family:"Helvetica Neue", Arial, sans-serif;
+    text-align:center;
+}
+
+footer ul{
+        list-style-type: none;
+        width: 100%;
+}
+
+
+
+
+
+
+@media(max-width: 400px){
+ body > div{
+	margin:0 auto;
+	width:100%;
+}
+
+nav ul li{
+	width:100%;
+	border-bottom:1px solid #fff;
+	margin:10px 0 0 0;
+}
+
+nav li:hover li {
+	
+}
+
+
+
+
+ }
+

@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8"/>
-		<title>CMDA Intranet - Aanmelden</title>
-		<meta name="description" content="Aanmelden bij CMD."/>
-		<meta name="keywords" content="intranet,cmd,studenten,hva,formulier,contactgegevens,voorkeuren"/>
-		<meta name="author" content="Bas Kemp"/>
-        
-      
-	</head>
-	<body>
+<head>
+    <meta charset="UTF-8"/>
+    <title>CMDA Intranet - Aanmelden</title>
+    <meta name="description" content="Aanmelden bij CMD."/>
+    <meta name="keywords" content="intranet,cmd,studenten,hva,formulier,contactgegevens,voorkeuren"/>
+    <meta name="author" content="Bas Kemp"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  
+</head>
+<body>
+	<div>
 		<header>
 			<nav>
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="index.html">Opleiding</a></li>
-					<li><a href="#">Onderwijsprogramma</a></li>
-					<li><a href="#">Organisatie</a></li>
-					<li><a href="#">Stages en projecten</a></li>
-					<li><a href="#">Aanmelden</a></li>
-				</ul>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Opleiding</a><ul><li><a href="#">Visie &amp; Beleid</a></li><li><a href="#">Opbouw Studieprogramma</a></li><li><a href="#">Competenties</a></li><li><a href="#">Diploma</a></li><li><a href="#">Beroepen</a></li></ul></li>
+                    <li><a href="#">Onderwijsprogramma</a></li>
+                    <li><a href="#">Organisatie</a></li>
+                    <li><a href="formulier.html">Stages en Projecten</a><ul><li><a href="formulier.html">Stages</a></li><li><a href="formulier.html">Projecten</a></li></ul></li>
+             
+                </ul>
+                
+    
 			</nav>
 		</header>		
 		
@@ -40,31 +43,31 @@
 			
 			<form autocomplete=off>
 				<fieldset>
-					<legend>Contactgegevens</legend> <!-- Deze titel onzichtbaar maken in CSS en de H1 stylen. -->
+					<legend>Contactgegevens</legend>
 					<h2>Contactgegevens</h2>
 
-					<label for="name">Naam *</label>
+					<label for="name">Naam </label>
 					<input type="text" required pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" id="name" placeholder="Minimaal twee letters"/>
 
 					<label for="business">Bedrijf</label>
 					<input type="text" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" id="business" placeholder="Minimaal twee letters"/>
 
-					<label for="street">Straatnaam *</label>
+					<label for="street">Straatnaam</label>
 					<input type="text" required id="street" placeholder="Oranjestraat"/>
 
-					<label for="homenumber">Huisnummer *</label>
+					<label for="homenumber">Huisnummer</label>
 					<input type="text" required id="homenumber" placeholder="111 A"/>
 					
-					<label for="zip">Postcode *</label>
+					<label for="zip">Postcode</label>
 					<input type="text" required pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}" id="zip" placeholder="1111AA"/> 
 
-					<label for="residence">Woonplaats *</label>
+					<label for="residence">Woonplaats</label>
 					<input type="text" required id="residence" placeholder="Nederland"/>
 
-					<label for="tel">Telefoonnummer *</label>
+					<label for="tel">Telefoonnummer</label>
 					<input type="tel" required pattern="^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$" id="tel" placeholder="0612345678"/>
 
-					<label for="email">E-mail *</label>
+					<label for="email">E-mail </label>
 					<input type="email" required id="email" placeholder="ik@voorbeeld.com"/>
 
 					<h2>Ik wil mij aanmelden voor:</h2>
@@ -146,25 +149,25 @@
 
 					<h3>Beschrijving werkzaamheden</h3>
 
-					<label for="companyname">Bedrijfsnaam *</label>
+					<label for="companyname">Bedrijfsnaam </label>
 					<input type="text" required pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" id="companyname" placeholder="Minimaal twee letters"/>
 
-					<label for="companystreet">Straatnaam *</label>
+					<label for="companystreet">Straatnaam </label>
 					<input type="text" required id="companystreet" placeholder="Oranjestraat"/>
 
-					<label for="companynumber">Huisnummer *</label>
+					<label for="companynumber">Huisnummer </label>
 					<input type="text" required id="companynumber" placeholder="111 A"/>
 					
-					<label for="companyzip">Postcode *</label>
+					<label for="companyzip">Postcode </label>
 					<input type="text" required pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}" id="companyzip" placeholder="1111AA"/> 
 
-					<label for="companyresidence">Woonplaats *</label>
+					<label for="companyresidence">Woonplaats </label>
 					<input type="text" required id="companyresidence" placeholder="Nederland"/>
 
-					<label for="companytel">Telefoonnummer *</label>
+					<label for="companytel">Telefoonnummer </label>
 					<input type="tel" required pattern="^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$" id="companytel" placeholder="0612345678"/>
 
-					<label for="sector">Sector *</label>
+					<label for="sector">Sector </label>
 					<input type="text" required id="sector" list="sectorlist" placeholder="Agrarisch"/>  
 						<datalist id="sectorlist">  
 							<option value="Agrarisch">
@@ -179,7 +182,7 @@
 							<option value="Zakelijke dienstverlening"> 
 						</datalist>
 
-						<label for="core">Core Business *</label>
+						<label for="core">Core Business </label>
 					<input type="text" required id="core" list="corelist" placeholder="Webdesign/ICT"/>  
 						<datalist id="corelist">  
 							<option value="Administratief/Financieel">
@@ -199,8 +202,10 @@
 			</form>
 		</article>
 
-		<footer>
-			
-		</footer>
-	</body>
+       
+    </div>
+    <footer>
+            
+        </footer>
+</body> 
 </html>
